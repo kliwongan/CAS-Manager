@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.EditActivity">
+
+    <RelativeLayout
+        android:id="@+id/edit-rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@id/title"
+            android:hint="@string/activity_title"
+            android:textSize="25sp"
+            android:maxLength="100"
+            android:inputType="textCapSentences"
+            tools:ignore="Autofill"
+            android:textColor="@color/menuFontColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/descr"
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="top|start"
+            android:textColor="@color/menuFontColor"
+            android:hint="@string/desc_hint"
+            android:inputType="textMultiLine"
+            android:minLines="6"
+            android:maxLength="400"/>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

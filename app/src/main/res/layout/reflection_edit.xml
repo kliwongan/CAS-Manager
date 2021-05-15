@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activity.EditReflection">
+
+        <RelativeLayout
+            android:id="@+id/edit-rel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/ref_edit_title"
+                android:hint="Reflection title"
+                android:textSize="25sp"
+                android:inputType="textCapSentences"
+                tools:ignore="Autofill"
+                android:layout_width="match_parent"
+                android:background="?attr/editTextBackground"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/ref_descr"
+                android:layout_below="@+id/ref_edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="top|start"
+                android:hint="Enter your reflection"
+                android:background="?attr/editTextBackground"
+                android:inputType="textMultiLine"
+                android:minLines="6"/>
+
+            <RelativeLayout
+                android:id="@+id/ref_dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="6dp"
+                android:clickable="true"
+                android:layout_below="@id/ref_descr">
+
+                <ImageView
+                    android:id="@+id/activity_ic_ref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_directions_walk_black_24dp" />
+
+                <TextView
+                    android:id="@+id/choose_activity_ref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/activity_ic_ref"
+                    android:text="@string/choose_activity"
+                    tools:ignore="UnknownId" />
+
+                <Spinner
+                    android:id="@+id/activity_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/choose_activity_ref" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

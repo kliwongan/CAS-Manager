@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.casmanager.activity.MainActivity">
+
+    <item
+        android:id="@+id/edit"
+        android:orderInCategory="100"
+        android:title="@string/save"
+        android:icon="@drawable/ic_update"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="100"
+        android:title="@string/save"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="always"
+        tools:ignore="DuplicateIds" />
+
+    <item
+        android:id="@+id/save"
+        android:orderInCategory="100"
+        android:title="@string/save"
+        android:icon="@drawable/ic_save"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/add"
+        android:orderInCategory="100"
+        android:title="@string/save"
+        android:icon="@drawable/ic_save"
+        app:showAsAction="always"
+        tools:ignore="DuplicateIds" />
+
+    <item
+        android:id="@+id/close"
+        android:orderInCategory="100"
+        android:title="@string/save"
+        android:icon="@drawable/ic_close"
+        app:showAsAction="always"
+        tools:ignore="DuplicateIds"
+        />
+
+
+
+</menu>

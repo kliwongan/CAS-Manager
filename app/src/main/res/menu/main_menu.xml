@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="General">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/activities"
+                    android:icon="@android:drawable/ic_menu_myplaces"
+                    android:title="Activities" />
+
+                <item
+                    android:id="@+id/reflections"
+                    android:icon="@android:drawable/ic_menu_edit"
+                    android:title="Reflections" />
+                <item
+                    android:id="@+id/logger"
+                    android:icon="@drawable/ic_timer"
+                    android:title="Logger" />
+
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="Extras">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/darkTheme"
+                    android:title="Switch Theme"/>
+                <item
+                    android:id="@+id/export"
+                    android:title="Export"/>
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+
+</menu>
